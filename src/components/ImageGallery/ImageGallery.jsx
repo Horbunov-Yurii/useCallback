@@ -1,5 +1,5 @@
 import ImageGalleryItem from "../ImageGalleryItem/ImageGalleryItem";
-const ImageGallery = ({  images }) => {
+const ImageGallery = ({  images, onImage}) => {
 
     return (
       <ul>
@@ -10,6 +10,7 @@ const ImageGallery = ({  images }) => {
                 tags={tags}
                 webformatURL={webformatURL}
                 largeImageURL={largeImageURL}
+                onImage={onImage}
               />
             );
         })}

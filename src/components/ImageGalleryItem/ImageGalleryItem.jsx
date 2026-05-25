@@ -1,7 +1,7 @@
-const ImageGalleryItem = ({ largeImageURL, webformatURL, tags }) => {
+const ImageGalleryItem = ({ largeImageURL, webformatURL, tags, onImage }) => {
   return (
     <li>
-      <img src={webformatURL} alt={tags} />
+      <img src={webformatURL} alt={tags} onClick={() => onImage(largeImageURL)}/>
     </li>
   );
 };
